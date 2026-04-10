@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="App Store">
+  <defs>
+    <linearGradient id="asbg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5AC8FA"/>
+      <stop offset="100%" stop-color="#0A84FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="26" fill="url(#asbg)"/>
+  <!-- Stylized "A" bundle (navbar mark, not an official Apple asset) -->
+  <path fill="#FFFFFF" d="M48 28h10l22 64H68l-4-12H46l-4 12H32L48 28zm5.2 18L51 64h16l-2.2-18h-11.6z"/>
+</svg>

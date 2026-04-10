@@ -1,0 +1,119 @@
+/* App hub homepage — compact card grid */
+.app-hub {
+  max-width: 880px;
+  margin: 0 auto 2rem;
+}
+
+.app-hub__lead {
+  color: var(--sec-text-color, #718096);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.app-hub__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.15rem;
+  margin-bottom: 2rem;
+}
+
+.app-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--board-color, #fff);
+  border: 1px solid var(--line-color, #eaecef);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.07);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.app-card:hover {
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.12);
+  transform: translateY(-2px);
+}
+
+.app-card__media {
+  display: block;
+  position: relative;
+  aspect-ratio: 16 / 11;
+  max-height: 160px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #e8eef5 0%, #f4f6f9 100%);
+}
+
+.app-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.app-card__body {
+  padding: 0.85rem 1rem 1.1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-card__title {
+  font-size: 1.12rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  color: var(--post-heading-color, #1a202c);
+}
+
+.app-card__badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--post-link-color, #0366d6);
+  margin-bottom: 0.45rem;
+}
+
+.app-card__desc {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--sec-text-color, #718096);
+  margin: 0 0 0.75rem;
+  flex: 1;
+}
+
+.app-card__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+  font-size: 0.88rem;
+}
+
+.app-card__links a {
+  font-weight: 500;
+}
+
+.app-hub__note {
+  font-size: 0.9rem;
+  color: var(--sec-text-color, #718096);
+  padding-top: 1rem;
+  border-top: 1px solid var(--line-color, #eaecef);
+}
+
+html[data-color-mode="dark"] .app-card,
+html.dark-mode .app-card {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+html[data-color-mode="dark"] .app-card:hover,
+html.dark-mode .app-card:hover {
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+}
+
+html[data-color-mode="dark"] .app-card__media,
+html.dark-mode .app-card__media {
+  background: linear-gradient(145deg, #2d3748 0%, #1a202c 100%);
+}

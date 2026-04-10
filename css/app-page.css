@@ -1,0 +1,90 @@
+/* App landing pages (LinkManager, DoseChime — URL path /medibell/) */
+.app-landing {
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+}
+
+.app-landing__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: center;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.app-landing__actions a {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.app-landing__meta {
+  font-size: 0.9rem;
+  color: var(--sec-text-color, #718096);
+  margin: 0 0 1.5rem;
+}
+
+.app-landing h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+}
+
+.app-landing h3 {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.app-screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.app-screenshot-grid figure {
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--line-color, #eaecef);
+  background: var(--board-color, #fff);
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+}
+
+.app-screenshot-grid img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: block;
+}
+
+.app-screenshot-grid figcaption {
+  padding: 0.5rem 0.65rem;
+  font-size: 0.8rem;
+  color: var(--sec-text-color, #718096);
+}
+
+.app-feature-list {
+  margin: 0 0 1rem;
+  padding-left: 1.15rem;
+}
+
+.app-feature-list li {
+  margin-bottom: 0.35rem;
+}
+
+.app-steps {
+  padding-left: 1.2rem;
+  margin: 0 0 1.5rem;
+}
+
+.app-steps li {
+  margin-bottom: 0.5rem;
+}
+
+.app-landing__quick {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line-color, #eaecef);
+  font-size: 0.95rem;
+}
