@@ -74,6 +74,24 @@
   margin-bottom: 0.45rem;
 }
 
+.app-card__badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.45rem;
+}
+
+.app-card__badge-row .app-card__badge {
+  margin-bottom: 0;
+}
+
+.app-card__badge--soon {
+  color: var(--post-text-color, #2c3e50);
+  background: rgba(15, 23, 42, 0.06);
+  border-radius: 6px;
+  padding: 0.12rem 0.45rem;
+}
+
 .app-card__desc {
   font-size: 0.85rem;
   line-height: 1.55;
